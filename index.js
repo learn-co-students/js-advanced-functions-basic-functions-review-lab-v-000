@@ -27,7 +27,12 @@ let Calculator = {
     },
 }
 
-let actionApplyer = (x,y) => {
-  if (y.length === 0) return x
-  return (1000+(x*2))%7
+let actionApplyer = function(start, ray) {
+  let a = start
+
+  for (let i = 0; i < ray.length; i++ ){
+    a = ray[i](a)
+  }
+
+  return a
 }
