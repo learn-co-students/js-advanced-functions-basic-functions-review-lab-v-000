@@ -21,8 +21,10 @@ const Calculator = {
 };
 
 const actionApplyer = (startingInteger, arrayOfFunctions) => {
-  arrayOfFunctions.forEach(fn => {
-    startingInteger = fn(startingInteger);
-  })
-  return startingInteger;
+  let a = startingInteger;
+
+  for (let i = 0; i < arrayOfFunctions.length; i++) {
+    a = arrayOfFunctions[i](a);
+  }
+  return a;
 }
