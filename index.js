@@ -13,3 +13,9 @@ function wrapAdjective(){
      'You are' +`*${word}*!`
   }
 }
+
+let Calculator =  {}
+
+function add(){
+  
+}
