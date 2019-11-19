@@ -14,16 +14,28 @@ function wrapAdjective(msg = '*'){
   }
 }
 
-let Calculator =  {}
-
-function add(){
-return 1+3
+let Calculator = {
+  add:function(x,y){
+    return x+y
+  },
+  subtract: function(x,y){
+    return x-y
+  },
+  multiply: function(x,y){
+    return x*y
+  },
+  divide: function(x,y){
+    return x/y
+  }
 }
 
-function subtract(){
 
-}
+function actionApplyer(x,arr){
+  if (arr===[]){
+    return x
+  }
+  else{
 
-function actionApplyer(){
+  }
 
 }
