@@ -31,11 +31,14 @@ let Calculator = {
 
 
 function actionApplyer(x,arr){
-  if (arr===[]){
+  if (arr.length === 0){
     return x
   }
   else{
-
+    let num = x
+    arr.forEach(function(element){
+     num = element(num)
+  })
+  return num
   }
-
 }
