@@ -31,10 +31,11 @@ Calculator.divide = function(x,y) {
 }
 
 function actionApplyer(baseNumber, arrayOfTransforms) {
+  const holder = [baseNumber];
   if (arrayOfTransforms.length === 0) {
     return baseNumber;
   } else {
-      
+      arrayOfTransforms.forEach( fn => holder[0] = fn(holder[0]));
+      return holder[0];
     }
-  }
 }
