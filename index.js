@@ -27,6 +27,9 @@ const Calculator = {
   }
 }
 
-function actionApplyer() {
-  
+function actionApplyer(num, ary) {
+  for (var i = 0; i < ary.length; i++) {
+    num = ary[i](num)
+  }
+  return num;
 }
