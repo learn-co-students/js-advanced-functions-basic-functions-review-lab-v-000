@@ -30,8 +30,9 @@ let Calculator = {
   }
 }
 
-
-function actionApplyer(n, arrayOfFunctions) {
+function actionApplyer(start, arrayOfFunctions) {
+  let n = start;
+  // Declare n inside the function to prevent "side effects" (i.e. if start is used somewhere else in the code, the value will not be changed).
   for (let i = 0; i < arrayOfFunctions.length; i++) {
     n = (arrayOfFunctions[i])(n);
   }
