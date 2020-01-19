@@ -12,23 +12,24 @@ function wrapAdjective(flair="*") {
   }
 }
 
-let Calculator = {}
+let Calculator = {
+  add: function add(a, b) {
+    return a + b;
+  },
+  
+  subtract: function subtract(a, b) {
+    return a - b;
+  },
+  
+  multiply: function multiply(a, b) {
+    return a * b;
+  },
+  
+  divide: function divide(a, b) {
+    return a / b;
+  }
+}
 
-Calculator.add = function add(a, b) {
-  return a + b;
-};
-
-Calculator.subtract = function subtract(a, b) {
-  return a - b;
-};
-
-Calculator.multiply = function multiply(a, b) {
-  return a * b;
-};
-
-Calculator.divide = function divide(a, b) {
-  return a / b;
-};
 
 function actionApplyer(n, arrayOfFunctions) {
   for (let i = 0; i < arrayOfFunctions.length; i++) {
