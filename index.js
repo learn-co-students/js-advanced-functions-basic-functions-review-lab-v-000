@@ -4,7 +4,7 @@ function saturdayFun(activity = 'roller-skate') {
 }
 
 let mondayWork = function (task = 'go to the office') {
-  return `This Monday, I will ${task}.`
+  return `This Monday, I will ${task}.` //random comments
 }
 
 function wrapAdjective(flair = "*") {
@@ -13,7 +13,7 @@ function wrapAdjective(flair = "*") {
   }
 }
 
-const Calculator = {
+const Calculator = { //ugh
   add: function(a, b) {
     return a + b
   }, 
