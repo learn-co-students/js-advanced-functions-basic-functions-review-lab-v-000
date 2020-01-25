@@ -28,13 +28,14 @@ const Calculator = {
   }
 }
 
-function actionApplyer(start, arr) {
-  let newStart = start
+function actionApplyer(start, arrOfFns) {
+  let ns = start
+  // Declared inside the function to prevent "side effects" (i.e. if start is used somewhere else in the code, the value will not be changed).
 
-  for (let i = 0; i < arr.length; i++ ){
-    newStart = arr[i](newStart)
+  for (let i = 0; i < arrOfFns.length; i++ ){
+    ns = arrOfFns[i](ns)
   }
-  return newStart
+  return ns
 }
 
 
