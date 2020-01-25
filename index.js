@@ -28,13 +28,13 @@ const Calculator = {
   }
 }
 
-function actionApplyer(starter, fnc) {
-  let aa = starter
+function actionApplyer(start, rx) {
+  let newStart = starter
 
-  for (let i = 0; i < fnc.length; i++ ){
-    aa = fnc[i](aa)
+  for (let i = 0; i < rx.length; i++ ){
+    newStart = rx[i]()
   }
-  return aa
+  return new
 }
 
 
