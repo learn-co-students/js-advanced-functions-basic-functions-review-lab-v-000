@@ -14,3 +14,19 @@ function mondayWork(activity = "go to the office") {
     return (`This Monday, I will ${activity}.`);
 }
 
+// Implement a function called wrapAdjective
+function wrapAdjective(){
+    
+    // Call example: let encouragingPromptFunction = wrapAdjective("!!!")
+    let encouragingPromptFunction = wrapAdjective("!!!");
+    // It should return a function. This "inner" function should:
+    // take a single parameter that should default to "special". Name it however you wish.
+    // It should take as parameter a String that will be used to create visual flair
+    // You may call the parameter whatever you like, but its default value should be "*"
+    return function(adj = "special", cisualFlair = "*") {
+        return `You are  ${adj} `
+    }
+    // Thus a total call should be: wrapAdjective("%")("a dedicated programmer") 
+    // //=> "You are %a dedicated programmer%!"
+    wrapAdjective("%")("a dedicated programmer") 
+}
