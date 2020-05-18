@@ -19,13 +19,12 @@ function mondayWork(activity = "go to the office") {
 // You may call the parameter whatever you like, but its default value should be "*"
 function wrapAdjective(flair = "*") {    
     // Call example: let encouragingPromptFunction = wrapAdjective("!!!")
-    let encouragingPromptFunction = wrapAdjective("!!!") 
+    // let encouragingPromptFunction = wrapAdjective("!!!") 
     // It should return a function. This "inner" function should:
     // take a single parameter that should default to "special". Name it however you wish.
         return function(adj = "special") {
-        return `You are ${adj} `
+            return `You are ${flair}${adj}${flair}!`
         }
     }
-    // Thus a total call should be: wrapAdjective("%")("a dedicated programmer") 
-    // //=> "You are %a dedicated programmer%!"
-    wrapAdjective("%")("a dedicated programmer") 
+ 
+   
