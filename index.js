@@ -57,30 +57,10 @@ let Calculator = {
 
 // Defines a function called actionApplyer
 // receives two arguments: a starting integer and an array of functions
-function actionApplyer(startInt, Calculator) {
-    // Calculator
+function actionApplyer(startInt, arrayOfFunctions) {
+    // loop over that array and call each function with our starting argument
+                                        // update the argument
     // returns the given starting point, unchanged, when the array is empty:
-    return startInt 
-    // return Calculator()
-    // return Calculator
+    arrayOfFunctions.forEach(answer => startInt = answer(startInt));
+    return startInt
 }
-
-// function actionApplyer(startInt) {
-//     return startInt
-// }
-
-// var arrayOfFunctions = [
-//     Calculator.add,
-//     Calculator.subtract,
-//     Calculator.multiply,
-//     Calculator.divide
-
-// ]
-
-var arrayOfFunctions = Calculator
-    // return  Calculator
-
-    
-
-
-   
