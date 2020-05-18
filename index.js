@@ -34,12 +34,33 @@ let Calculator = {
     add() {
         //  calculates 1 + 3:
         return 1 + 3    
-    }
+    },
 
    // that has a function called subtract
-    function subtract() {
+    subtract() {
+        // subtracts 1 - 3
         return 1 - 3 
+    },
+
+    // that has a function called multiply
+    multiply() {
+        // calculates 1 * 3
+        return 1 * 3
+    },
+
+    // that has a function called divide
+    divide() {
+        // calculates 10 / 5
+        return 10 / 5
     }
+}
+
+// Defines a function called actionApplyer
+// receives two arguments: a starting integer and an array of functions
+function actionApplyer(startInt, Calculator) {
+    // Calculator
+    // returns the given starting point, unchanged, when the array is empty:
+    return startInt 
 }
 
     
