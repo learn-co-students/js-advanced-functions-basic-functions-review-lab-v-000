@@ -60,7 +60,8 @@ let Calculator = {
 function actionApplyer(startInt, Calculator) {
     // Calculator
     // returns the given starting point, unchanged, when the array is empty:
-    return startInt 
+    // return startInt 
+    return Calculator
 }
 
     
