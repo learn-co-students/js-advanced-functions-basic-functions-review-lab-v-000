@@ -26,5 +26,23 @@ function wrapAdjective(flair = "*") {
             return `You are ${flair}${adj}${flair}!`
         }
 }
- 
+
+// defines an object called Calculator
+// has a JavaScript Object called Calculator as a local variable: 
+let Calculator = {
+    // that has a function called add
+    add() {
+        //  calculates 1 + 3:
+        return 1 + 3    
+    }
+
+   // that has a function called subtract
+    function subtract() {
+        return 1 - 3 
+    }
+}
+
+    
+
+
    
