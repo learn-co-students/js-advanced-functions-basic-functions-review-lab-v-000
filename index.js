@@ -57,17 +57,17 @@ let Calculator = {
 
 // Defines a function called actionApplyer
 // receives two arguments: a starting integer and an array of functions
-// function actionApplyer(startInt, Calculator) {
+function actionApplyer(startInt, Calculator) {
     // Calculator
     // returns the given starting point, unchanged, when the array is empty:
-    // return startInt 
+    return startInt 
     // return Calculator()
     // return Calculator
-// }
-
-function actionApplyer(startInt) {
-    return startInt
 }
+
+// function actionApplyer(startInt) {
+//     return startInt
+// }
 
 // var arrayOfFunctions = [
 //     Calculator.add,
