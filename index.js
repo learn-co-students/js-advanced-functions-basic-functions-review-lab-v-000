@@ -25,7 +25,7 @@ function wrapAdjective(flair = "*") {
         return function(adj = "special") {
         return `You are ${adj} `
         }
+    }
     // Thus a total call should be: wrapAdjective("%")("a dedicated programmer") 
     // //=> "You are %a dedicated programmer%!"
     wrapAdjective("%")("a dedicated programmer") 
-}
