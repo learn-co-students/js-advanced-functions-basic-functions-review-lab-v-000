@@ -28,23 +28,13 @@ const Calculator = {
 }
 
   
-    // function actionApplyer(startingInteger, arrayOfFunctions){
-    //   if (arrayOfFunctions.length == 0) {
-    //     return startingInteger;}
-    //   else {
-    //         let answer = startingInteger
-    //         for (let i = 0; i < arrayOfFunctions.length; i++ ){
-    //             answer = arrayOfFunctions[i](answer)
-    //         } 
-    //     }  return answer
-    // } 
-
-    let actionApplyer = function(start, ray) {
-        let a = start
-      
-        for (let i = 0; i < ray.length; i++ ){
-          a = ray[i](a)
-        }
-      
-        return a
-      }
+    function actionApplyer(startingInteger, arrayOfFunctions){
+      if (arrayOfFunctions.length == 0) {
+         return startingInteger;}
+      else {
+            let answer = startingInteger
+            for (let i = 0; i < arrayOfFunctions.length; i++ ){
+                answer = arrayOfFunctions[i](answer)
+            } return answer
+        }  
+    } 
