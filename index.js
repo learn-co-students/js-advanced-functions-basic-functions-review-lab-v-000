@@ -29,7 +29,7 @@ let Calculator = {
 }
 
 
-function actionApplyer(i,array=[spl,sum]){
+function actionApplyer(i,array){
   function spl(a) {
       return a.toString().split('').map(Number);
     }
