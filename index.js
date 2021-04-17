@@ -30,19 +30,8 @@ let Calculator = {
 
 
 function actionApplyer(i,array){
-  function spl(a) {
-      return a.toString().split('').map(Number);
-    }
-  function sum(numbers) {
-      for (i=0; i<numbers.length; i++){
-        result += numbers[i];
-      }
-      return result;
-    }
-  if (array.length === 0) {
-    return i;
-  } else {
-    let arr = spl(i);
-    return sum(arr);
-  }
+  let j = 0;
+  for (j=0; j<array.length; j++)
+    i=array[j](i);
+  return i;
 }
