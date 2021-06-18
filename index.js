@@ -6,7 +6,7 @@ function mondayWork(activity="go to the office"){
   return `This Monday, I will ${activity}.`
 }
 function wrapAdjective(wrap="*"){
-  return function(adjective="special") { return `You are ${wrap}${adjective}${wrap}!`}
+  return (adjective="special") => `You are ${wrap}${adjective}${wrap}!`
 }
 const Calculator = {
   add: (a,b) => a+b,
