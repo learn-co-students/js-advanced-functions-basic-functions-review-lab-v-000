@@ -1,41 +1,41 @@
 // Your code here
-function saturdayFun(activity = "roller-skate"){
-    return `This Saturday, I want to ${activity}!`
-}
+function saturdayFun(fun = "roller-skate"){
+    return `This Saturday, I want to ${fun}!`
+};
 
-let mondayWork = function(activity = 'go to the office'){
-    return `This Monday, I will ${activity}.`
-}
+let mondayWork = function(work = 'go to the office'){
+    return `This Monday, I will ${work}.`
+};
 
-let wrapAdjective = function(vflair= '*'){
-    return function(adj="special"){
-        return `You are ${vflair + adj + vflair}!`
+let wrapAdjective = function(flair = '*'){
+    return function(adj = 'special'){
+        return `You are ${flair + adj + flair}!`
     }
-}
+};
 
 const Calculator = {
     add: function(a,b){
-        return a + b 
+        return a + b;
     },
     subtract: function(a,b){
-        return a - b
+        return a - b;
     },
     multiply: function(a,b){
-        return a * b
+        return a * b;
     },
     divide: function(a,b){
-        return a / b 
+        return a / b;
     }
-}
+};
 
-function actionApplyer(int, arry){
-    if (arry.length === 0){
-        return int 
+function actionApplyer(int, arrayOfFunc) {
+    if (arrayOfFunc.length === 0){
+        return int
     }
     else {
-        arry.forEach(f => {
+        arrayOfFunc.forEach(f => {
             int = f(int)
         });
-     return int
+        return int 
     }
-}
+};
